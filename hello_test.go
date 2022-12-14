@@ -23,6 +23,13 @@ func  TestHello(t *testing.T) {
 
     assertCodeMessage(t,got,want)
   })
+
+  t.Run("hello in french", func(t *testing.T){
+    got := hello("marc","French")
+    want := "Bonjour, marc"
+
+    assertCodeMessage(t,got,want)
+  })
 }
 
 func assertCodeMessage(t testing.TB, got, want string){
