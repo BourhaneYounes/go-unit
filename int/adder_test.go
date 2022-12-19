@@ -16,6 +16,7 @@ func  TestAdder(t *testing.T){
 func ExampleAdd(){
   sum := Add(1,1)
   fmt.Println(sum)
+  //Output: 2
 }
 
 func assertCodeMessage(t testing.TB, got, expected int) {
